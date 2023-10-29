@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title> One CUP </title>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="floating-wpp.min.js"></script>
+        <link rel="stylesheet" href="floating-wpp.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-bar">
+                <h2 class="title">Te<span>a</span></h2>
+                <p>Tea Shop</p>
+                <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>   
+                </ul>
+            </div>
+            <div class="home">
+            <h1 class="title-1"><span>Chai</span>The Heart and Soul of India<br/>Steeped in Tradition and Love</h1>
+            <p>One Sip at a Time</p>
+            <button type="button">Shop Now</button>
+            </div>
+            <div id="myDiv"></div>
+    </body>
+    <script type="text/javascript">
+        $(function () {
+        $('#myDiv').floatingWhatsApp({
+        phone: '+919693771537' ,
+        showPopup: 'True',
+        popupMessage: 'Hi, How are you?',
+        headerTitle: "whatsapp Chat",
+        message: "Great Welcome"
+        });
+        });
+    </script>
+</html>
